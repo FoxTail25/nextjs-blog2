@@ -7,11 +7,11 @@ import { useRouter } from "next/router";
 export default function FirstPost() {
 
 const router = useRouter()
+
 let arrPosts = [1,2,3,4,5]
-console.log(router.query.post)
 let post = arrPosts.includes(+router.query.post)
 
-console.log(post)
+console.log("post is : ", post)
 
     return(
 <Layout>
